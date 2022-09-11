@@ -413,7 +413,7 @@
     </footer>
 
     <!-- бекдроп -->
-
+    
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal-close-btn" type="button" data-modal-close>
@@ -421,6 +421,42 @@
                     <use href="./images/sprite.svg#close"></use>
                 </svg>
             </button>
+            <p class="modal-form-title">Залиште свої дані, ми вам передзвонимо</p>
+            <form>
+                <label>
+                    Ім'я
+                        <input type="text"
+                            class="modal-form-input"
+                            required
+                            pattern="[a-zA-Zа-яА-ЯіІїЇ`ʼ]+"
+                            name="user_name"
+                            placeholder="Данило">
+                </label>
+                <label>
+                    Телефон
+                        <input type="tel"
+                            class="modal-form-input"
+                            required
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                            title="xxx-xxx-xx-xx"
+                            name="user_phone"
+                            placeholder="096-345-34-34">
+                </label>
+                <label>
+                    <input type="email"
+                    required
+                    name="user_email"
+                    placeholder="test@gmail.com">
+                </label>
+                <label>
+                    Коментар
+                    <textarea name="user_message" 
+                    lass="modal-form-message" 
+                    laceholder="Введіть коментар"
+                    ></textarea>
+                </label>
+                <button type="submit" class="footer-form-btn">Відправити</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
