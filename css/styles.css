@@ -742,9 +742,10 @@ img {
 }
 
 .modal-form-check-field {
-    display: block;
+    display: flex;
+    align-items: center;
     margin-bottom: 30px;
-    text-align: center;
+    justify-content: center;
 }
 
 .modal-form-check-text {
@@ -765,6 +766,7 @@ img {
 
 .modal-form-own-checkbox {
     cursor: pointer;
+    margin-right: 7px;
 }
 
 .modal-form-own-checkbox-active-icon {
